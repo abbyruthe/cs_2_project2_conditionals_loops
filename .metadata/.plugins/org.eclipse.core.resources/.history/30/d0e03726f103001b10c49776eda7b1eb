@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class exampleArray { // start class
+
+	public static void main(String[] args) { // start main
+	int n = Integer.parseInt(args[0]);
+	Random b = new Random();
+	int[]a = new int[n]; // step 1 and step 2
+	for (int i = 0; i<n; i++) { // start first for 
+		a[i] = b.nextInt(11); // going to generate an integer between 0 and 10
+	} // end first for
+	for (int i = 0; i<n; i++) { // start second for
+		System.out.println(a[i]); // this prints it as a numeric list from top to bottom on multiple lines
+	} // end second for
+	System.out.println(Arrays.toString(a)); // prints out one 
+	} // end main
+} // end class
+
+// can put step one and step two together in:
+// double[] array1 = new double [10];

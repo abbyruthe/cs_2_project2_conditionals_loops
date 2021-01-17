@@ -1,0 +1,18 @@
+public class flip_loop { // start class
+// taking in "n" coin flips, then calculate the fraction of heads in n coin flips
+
+	public static void main(String[] args) { // start main
+		int n = Integer.parseInt(args[0]);
+		int i = 0;
+		while (i < n) { // start while
+
+			double flip = Math.random(); // this is all one flip
+			if (flip < 0.5) { // start inter if
+				System.out.println("head");
+			} // end inter if
+			else
+				System.out.println("tail");
+			i++;
+		} // end while
+	} // end main
+} // end class

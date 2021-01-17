@@ -1,0 +1,25 @@
+public class Practive {
+
+    public static void main(String[] args) {
+    int var1 = Integer.parseInt(args[0]); // create variable, allocate space and assign value
+    int var2 = Integer.parseInt(args[1]); // creating the variable, allocate space, assign in 1 step
+    int var3 = Integer.parseInt(args[2]);
+    // (var1 < var2 < var3)||(var1>var2>var3)
+    // System.out.println(var1==var2&& var2==var3);
+    if(var1 == var2 && var2 == var3){ // start if
+    	System.out.println("all 3 things are equal to one another");
+    } //end if
+    else{ //start else
+    	System.out.println("at least one of these things is not like the other");
+    } //end else
+    
+    /*
+     * if (condition == true){
+     * do something
+     * }
+     * else {
+     * do something else
+     * }
+     */
+    }
+}

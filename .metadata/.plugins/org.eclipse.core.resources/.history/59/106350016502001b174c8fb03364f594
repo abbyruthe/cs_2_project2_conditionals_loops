@@ -1,0 +1,21 @@
+public class Practive {
+
+    public static void main(String[] args) {
+    int var1 = Integer.parseInt(args[0]); // create variable, allocate space and assign value
+    if(var1 >= 63){ // start if
+    	System.out.println("pass");
+    } //end if
+    else{ //start else
+    	System.out.println("fail");
+    } //end else
+    
+    /*
+     * if (condition == true){
+     * do something
+     * }
+     * else {
+     * do something else
+     * }
+     */
+    }
+}

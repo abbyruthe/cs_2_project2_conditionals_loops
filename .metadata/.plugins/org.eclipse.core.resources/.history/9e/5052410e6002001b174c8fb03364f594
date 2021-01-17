@@ -1,0 +1,11 @@
+public class RGBtoCMYK {
+
+    public static void main(String[] args) {
+    double red = Double.parseDouble(args[0]); // create variable, allocate space and assign value
+    int green = Integer.parseInt(args[1]); // creating the variable, allocate space, assign in 1 step
+    int blue = Integer.parseInt(args[2]);
+    double white = Math.max(Math.max(green/255, red/255), blue/255);
+    double cyan = (white-(red/255)/white);
+   System.out.println(white);
+    }
+}

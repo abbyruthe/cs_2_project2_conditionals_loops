@@ -1,0 +1,12 @@
+public class doWhile { // start class
+
+	public static void main(String[] args) { // start main
+		int i = 10; // Initialize i
+		// body of while loop
+		do { // start do loop
+			System.out.println(i);
+			i--;
+		} // end do loop
+		while (i>1);
+	} // end main
+} // end class

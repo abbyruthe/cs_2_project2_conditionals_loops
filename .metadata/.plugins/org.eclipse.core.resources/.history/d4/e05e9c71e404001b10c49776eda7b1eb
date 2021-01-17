@@ -1,0 +1,40 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class bubbleSort { // start class
+
+	public static void main(String[] args) { // start main
+		int n = 10;
+		Random b = new Random();
+		int[] a = new int[n]; // step 1 and step 2
+		for (int i = 0; i < n; i++) { // start first for
+			a[i] = b.nextInt(11); // going to generate an integer between 0 and 10
+		} // end first for
+		for (int i = 0; i < n; i++) { // start second for
+			System.out.println(a[i]); // this prints it as a numeric list from top to bottom on multiple lines
+		} // end second for
+		System.out.println(Arrays.toString(a));// prints out one list of integers by transforming it to a string
+
+		boolean flag = true;
+
+		while (flag == true) { // start big while, while flag is true
+			// this is one iteration of bubble sort
+			for (int i = 0; i < n - 1; i++) { // start 3rd for // 0 to the n minus 2 spot
+				flag = false; // assume next round you do not need to go through another round
+				if (a[i] > a[i + 1]) { // start if statement
+					// as it turns out, you do need to go through another round
+					flag = true;
+					// swap a[i] and a[i+1]
+					int temp; // temporary variable
+					temp = a[i];
+					a[i] = a[i + 1];
+					a[i + 1] = temp; // this is one iteration
+				} // end if statement
+			} // end 3rd for
+		} // end big while
+		System.out.println(Arrays.toString(a));
+	} // end main
+} // end class
+
+// can put step one and step two together in:
+// double[] array1 = new double [10];

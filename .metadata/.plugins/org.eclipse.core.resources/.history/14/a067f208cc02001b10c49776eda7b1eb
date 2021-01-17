@@ -1,0 +1,11 @@
+public class while_loop_practice {
+
+    public static void main(String[] args) { // start main
+    	int n = Integer.parseInt(args[0]);
+    	int i = 0; // initialize i
+    	while(i<=n) {; // start while loop
+    		System.out.println(i);
+    		i = i+1;
+    	} // end while loop
+    } // end main
+}

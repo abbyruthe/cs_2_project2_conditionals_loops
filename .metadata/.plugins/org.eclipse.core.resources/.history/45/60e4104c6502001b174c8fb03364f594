@@ -1,0 +1,20 @@
+public class Practive {
+
+    public static void main(String[] args) {
+    int a = Integer.parseInt(args[0]); // create variable, allocate space and assign value
+    if(a < 0){ // start if
+    	// turn a positive if a is negative
+    	a = a * (-1);
+    } //end if
+	System.out.println(a);
+    
+    /*
+     * if (condition == true){
+     * do something
+     * }
+     * else {
+     * do something else
+     * }
+     */
+    }
+}

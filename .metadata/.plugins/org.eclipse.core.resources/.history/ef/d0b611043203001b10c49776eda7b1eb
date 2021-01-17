@@ -1,0 +1,39 @@
+public class coinflips_nested_for_loops { // start class
+
+	public static void main(String[] args) { // start main
+		int n = 3;
+		int num_person = 2;
+		float head = 0;
+		int worst_person = 1;
+		float worst_ratio = 1;
+		
+		for (int j = 0; j<=num_person; j++) { // start person loop
+			
+		// This part calculates one person's many flips
+		for (int i=1; i <= n; i++) { // start for loop
+			double flip = Math.random();
+			if (flip < 0.5) { // start inter if
+			System.out.println("head");
+			head++;
+		} // end inter if
+		else
+			System.out.println("tail");
+		} // end for loop
+		System.out.println(head/n);
+		if (head/n < worst_ratio) { // start of if
+			worst_ratio = head/n;
+			worst_person = j;
+		} // end of if
+		} // end person loop
+		
+		System.out.println("worst person is " + worst_person);
+		System.out.println("worst ratio is " + worst_ratio);
+
+	} // end main
+} // end class
+// there is only one line wrong. Change one line's position into somewhere else
+
+
+
+/* This part calculate one person's many flips*
+ * double flip = Math.random();
