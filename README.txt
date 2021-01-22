@@ -2,7 +2,7 @@ Conditionals and Loops
 
 This was our first project in Java. This projected consisted of solving little problems using programming that utilized the basics of Java such as conditionals, random library, loops and nested loops among other things. 
 
-There are two folders in this project that contain the Java files which is in the "src" folder and the class files which is in the "bin" folder. 
+There are two folders in this project, one contains the Java files which is in the "src" folder and the other contains class files which is in the "bin" folder. 
 
 Inside the "bin" folder, there are files that contain the code to the projects and the explanations are below:
 
